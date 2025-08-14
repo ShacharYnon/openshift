@@ -1,3 +1,7 @@
 INSERT INTO `data`
 (`first_name`, `last_name`)
-VALUES ('[value-1]','[value-2]')
+VALUES ('Ptahya','Menahcem'),
+('Jakob' ,'Bar-adon'),
+('Shachar' ,'Levi'),
+('Or' ,'Gal'),
+('Dor' ,'Bir')
