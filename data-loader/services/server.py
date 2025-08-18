@@ -1,6 +1,6 @@
 import os
 from fastapi import FastAPI ,HTTPException
-from mongoDAL import MongoDal
+from services.mongoDAL import MongoDal
 
 
 app = FastAPI(title="MONGO API" ,version="1.0.0")
@@ -21,4 +21,6 @@ def get_items(collection:str):
         return dal.show_collection(collection)
     except Exception as e:
         raise HTTPException(status_code=500 ,detail=str(e))
+
+
 
